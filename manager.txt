@@ -1,0 +1,5 @@
+READER reader.txt
+WRITER =       writer.txt
+EXECUTOR executor.txt
+INPUT = input.txt
+OUTPUT = output.txt

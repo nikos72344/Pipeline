@@ -1,0 +1,114 @@
+нояб. 15, 2020 11:10:11 PM Manager setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM BaseSemantics setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setDelimiter
+INFO: Delimiter is set
+нояб. 15, 2020 11:10:12 PM Parser read
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM Parser parse
+INFO: Config file parsed successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics readConfig
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics run
+INFO: Config file tokens are valid
+нояб. 15, 2020 11:10:12 PM Manager readConfig
+INFO: Manager config file read successfully
+нояб. 15, 2020 11:10:12 PM Reader setProducer
+INFO: Producer set successfully
+нояб. 15, 2020 11:10:12 PM Reader setConsumer
+INFO: Consumer set successfully
+нояб. 15, 2020 11:10:12 PM Reader setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM BaseSemantics setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setDelimiter
+INFO: Delimiter is set
+нояб. 15, 2020 11:10:12 PM Parser read
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM Parser parse
+INFO: Config file parsed successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics readConfig
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics run
+INFO: Config file tokens are valid
+нояб. 15, 2020 11:10:12 PM Reader dataValidation
+INFO: SIZE_TO_READ value is valid
+нояб. 15, 2020 11:10:12 PM Reader readConfig
+INFO: Reader config file read successfully
+нояб. 15, 2020 11:10:12 PM Executor setProducer
+INFO: Producer set successfully
+нояб. 15, 2020 11:10:12 PM Executor setConsumer
+INFO: Consumer set successfully
+нояб. 15, 2020 11:10:12 PM Executor setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM BaseSemantics setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setDelimiter
+INFO: Delimiter is set
+нояб. 15, 2020 11:10:12 PM Parser read
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM Parser parse
+INFO: Config file parsed successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics readConfig
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics run
+INFO: Config file tokens are valid
+нояб. 15, 2020 11:10:12 PM Executor dataValidation
+INFO: Executor values are valid
+нояб. 15, 2020 11:10:12 PM Executor readConfig
+INFO: Executor config file read successfully
+нояб. 15, 2020 11:10:12 PM Writer setProducer
+INFO: Producer set successfully
+нояб. 15, 2020 11:10:12 PM Writer setConsumer
+INFO: Consumer set successfully
+нояб. 15, 2020 11:10:12 PM Writer setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM BaseSemantics setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setConfig
+INFO: Config file name is set
+нояб. 15, 2020 11:10:12 PM Parser setDelimiter
+INFO: Delimiter is set
+нояб. 15, 2020 11:10:12 PM Parser read
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM Parser parse
+INFO: Config file parsed successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics readConfig
+INFO: Config file read successfully
+нояб. 15, 2020 11:10:12 PM BaseSemantics run
+INFO: Config file tokens are valid
+нояб. 15, 2020 11:10:12 PM Writer dataValidation
+INFO: SIZE_TO_WRITE value is valid
+нояб. 15, 2020 11:10:12 PM Writer readConfig
+INFO: Writer config file read successfully
+нояб. 15, 2020 11:10:12 PM Manager setPipeline
+INFO: Pipeline was created successfully
+нояб. 15, 2020 11:10:12 PM Reader setInputStream
+INFO: Input stream is set
+нояб. 15, 2020 11:10:12 PM Writer setOutputStream
+INFO: Output stream is set
+нояб. 15, 2020 11:10:12 PM Reader execute
+INFO: Portion data was read successfully
+нояб. 15, 2020 11:10:12 PM Executor doShift
+INFO: Data is shifted
+нояб. 15, 2020 11:10:12 PM Writer execute
+INFO: Saving data into buffer
+нояб. 15, 2020 11:10:12 PM Reader execute
+INFO: Portion data was read successfully
+нояб. 15, 2020 11:10:12 PM Executor doShift
+INFO: Data is shifted
+нояб. 15, 2020 11:10:12 PM Writer execute
+INFO: Saving data into buffer
+нояб. 15, 2020 11:10:12 PM Reader execute
+INFO: All the data was read successfully
+нояб. 15, 2020 11:10:12 PM Executor doShift
+INFO: There is no data to shift
+нояб. 15, 2020 11:10:12 PM Writer execute
+INFO: Writing the remaining data
