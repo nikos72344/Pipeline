@@ -99,6 +99,10 @@ public class Writer implements IWriter {
     //Установка потребителя
 
     public RC setConsumer(IExecutable c) {
+        if (c != null) {
+            LOGGER.severe("Wrong consumer");
+            return RC.CODE_FAILED_PIPELINE_CONSTRUCTION;
+        }
         consumer = c;
         LOGGER.info("Consumer set successfully");
         return RC.CODE_SUCCESS;

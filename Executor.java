@@ -34,8 +34,8 @@ public class Executor implements IExecutor {
 
     //Конструктор
 
-    public Executor(Logger logger){
-        LOGGER=logger;
+    public Executor(Logger logger) {
+        LOGGER = logger;
     }
 
     //Установка производителя
@@ -67,7 +67,7 @@ public class Executor implements IExecutor {
     public RC dataValidation() {
         try {   //Преобразовние строки в целое значение
             shiftAmount = Integer.parseInt(map.get(tokens[tokenInd.SHIFT_AMOUNT.ordinal()]));
-        }catch (NumberFormatException e){   // - обработка исключения неверного значения
+        } catch (NumberFormatException e) {   // - обработка исключения неверного значения
             LOGGER.severe("Invalid " + tokens[tokenInd.SHIFT_AMOUNT.ordinal()] + " value");
             return RC.CODE_CONFIG_SEMANTIC_ERROR;
         }
