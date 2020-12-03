@@ -35,6 +35,10 @@ public class Reader implements IReader {
     //Установка производителя
 
     public RC setProducer(IExecutable p) {
+        if (p != null) {
+            LOGGER.severe("Wrong producer");
+            return RC.CODE_FAILED_PIPELINE_CONSTRUCTION;
+        }
         producer = p;
         LOGGER.info("Producer set successfully");
         return RC.CODE_SUCCESS;

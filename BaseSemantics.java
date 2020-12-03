@@ -12,11 +12,11 @@ import java.util.logging.Logger;
 public class BaseSemantics extends BaseGrammar implements IConfigurable {
     private static Logger LOGGER;   // - ссылка на логгер
 
-    private static int wordsNum = 2;    // - значение количества слов в стоке
+    protected final static int wordsNum = 2;    // - значение количества слов в стоке
 
     private String configFileName;  // - имя конфигурационного файла
-    private ArrayList<ArrayList<String>> data;  // - контейнер разделенных на слова строк
-    private Map<String, String> map;    // - словарь, хранящий иформацию: токен - значение
+    protected ArrayList<ArrayList<String>> data;  // - контейнер разделенных на слова строк
+    protected Map<String, String> map;    // - словарь, хранящий иформацию: токен - значение
 
     //Конструктор
 
@@ -47,6 +47,17 @@ public class BaseSemantics extends BaseGrammar implements IConfigurable {
         return RC.CODE_SUCCESS;
     }
 
+    //Метод, заполняющий словарь данными
+
+    protected RC fillMap(ArrayList<String> arr) {
+        if (arr.size() != wordsNum) {   // - проверка на наличие токена и одного значения в строке
+            LOGGER.severe("Token has more than one value");
+            return RC.CODE_CONFIG_SEMANTIC_ERROR;
+        }
+        map.put(arr.get(0), arr.get(wordsNum - 1)); // - занесение соответствующего токена и его значения в словарь
+        return RC.CODE_SUCCESS;
+    }
+
     //Метод, производящий семантический анализ содержимого конфигурационного файла
 
     public RC run() {
@@ -57,12 +68,12 @@ public class BaseSemantics extends BaseGrammar implements IConfigurable {
         map = new HashMap<String, String>();    // - создание словаря для хранения данных
         for (int i = 0; i < numberTokens(); i++) {
             for (ArrayList<String> arr : data) {
-                if (arr.size() != wordsNum) {   // - проверка на наличие только двух слов в строке
-                    LOGGER.severe("Token has more than one value");
-                    return RC.CODE_CONFIG_SEMANTIC_ERROR;
+                if (arr.get(0).equals(token(i))) {
+                    RC code = fillMap(arr);
+                    if (code != RC.CODE_SUCCESS)
+                        return code;
+                    break;
                 }
-                if (arr.get(0).equals(token(i)))
-                    map.put(arr.get(0), arr.get(wordsNum - 1)); // - занесение соответствующего токена и его значения в словарь
             }
         }
         if (map.size() != numberTokens()) { // - соотношение количества требуемых и прочитанных токенов
